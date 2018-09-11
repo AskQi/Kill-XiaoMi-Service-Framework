@@ -28,7 +28,7 @@ AUTOMOUNT=true
 PROPFILE=false
 
 # Set to true if you need post-fs-data script
-POSTFSDATA=false
+POSTFSDATA=true
 
 # Set to true if you need late_start service script
 LATESTARTSERVICE=false
@@ -41,7 +41,8 @@ LATESTARTSERVICE=false
 
 print_modname() {
   ui_print "*******************************"
-  ui_print "     Magisk Module Template    "
+  ui_print "Kill XiaoMi Service Framework"
+  ui_print "            卸载小米系统服务       "
   ui_print "*******************************"
 }
 
@@ -54,7 +55,7 @@ print_modname() {
 
 # This is an example
 REPLACE="
-/system/app/Youtube
+/system/app/XiaomiServiceFramework
 /system/priv-app/SystemUI
 /system/priv-app/Settings
 /system/framework
@@ -63,6 +64,7 @@ REPLACE="
 # Construct your own list here, it will override the example above
 # !DO NOT! remove this if you don't need to replace anything, leave it empty as it is now
 REPLACE="
+/system/app/XiaomiServiceFramework
 "
 
 ##########################################################################################
