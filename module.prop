@@ -3,5 +3,5 @@ name=Kill XiaoMi Service Framework
 version=v1
 versionCode=1
 author=Qida
-description=Kill the MIUI10 official XiaoMi Service Framework.And you will be able to use MiPushFramework.(干掉MIUI10官方小米服务框架，使用之后就可以使用第三方框架啦。)
-minMagisk=16000
+description=Kill the MIUI10 official XiaoMi Service Framework.And you will be able to use MiPushFramework
+minMagisk=17000
